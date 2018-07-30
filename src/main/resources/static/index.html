@@ -1,956 +1,403 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<title>呦呦教育</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-	<!-- js -->
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/area-data.js"></script>
-	<script src="js/provinceCitySelects.js"></script>
-	<!-- //js -->
-	<!-- for-mobile-apps -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Alor Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-	<script type="application/x-javascript">
-		addEventListener("load", function() {
-			setTimeout(hideURLbar, 0);
-		}, false);
-
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
-	<!-- //for-mobile-apps -->
-	<!-- start-smoth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-	<!-- start-smoth-scrolling -->
-</head>
-
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>匈牙利国家公共卫生中心，布达佩斯FrédéricJoliot-Curie放射与放射研究所</title>
+    <meta name="keywords" content="代码库,dmaku" />
+    <meta name="description" content="代码库企业网站系统dmaku是采用PHP+MYSQL技术和MVC模式进行开发的，架构清晰，代码易于维护。支持伪静态功能，可生成google和百度地图，支持自定义url、关键字和描述，符合SEO标准。拥有企业网站常用的模块功能(企业简介模块、新闻模块、产品模块、下载模块、图片模块、在线留言、在线订单、友情链接、网站地图等)，强大灵活的后台管理功能，可为企业打造出专业且具有营销力的标准网站。" />
+    <meta name="applicable-device"content="pc,mobile">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bxslider.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bxslider.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+  </head>
+<!--/************************************************************
+ *																*
+ * 						      代码库							*
+ *                        www.dmaku.com							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
 <body>
-	<!-- header -->
-	<div class="header">
-		<div class="container">
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=" " /></a>
-			</div>
-			<div class="logo-right">
-				<span class="menu"><img src="images/menu.png" alt=" "/></span>
-				<ul class="nav1">
-					<li class="cap"><a href="index.html" class="act">首页</a></li>
-					<li><a href="about.html">公司介绍</a></li>
-					<li><a href="course.html">课程介绍</a></li>
-					<li><a href="growup.html">成长历程</a></li>
-					<!--
-						<li><a href="#childrens" class="scroll">Childrens</a></li>
-						<li><a href="#team" class="scroll">Team Member</a></li>
-						-->
-					<li><a href="addTeam.html">申请加盟</a></li>
-					<!--<li><a href="#contact" class="scroll">预约试听</a></li>-->
-					<li><a href="contact.html">预约试听</a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-			<!-- script for menu -->
-			<script>
-				$("span.menu").click(function() {
-					$("ul.nav1").slideToggle(300, function() {
-						// Animation complete.
-					});
-				});
-			</script>
-			<!-- //script for menu -->
-		</div>
-	</div>
-	<!-- //header -->
-	<!-- banner -->
-	<div>
-		<div>
-			<!-- Slider-starts-Here -->
-			<div id="myCarousel" class="carousel slide">
-				<!-- 轮播（Carousel）指标 -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
-				<!-- 轮播（Carousel）项目 -->
-				<div class="carousel-inner">
-					<div class="item active">
-						<a href="./contact.html">
-							<img src="./images/banner.jpg" alt="First slide">
-						</a>
-					</div>
-					<div class="item">
-						<a href="./contact.html">
-							<img src="./images/banner.jpg" alt="First slide">
-						</a>
-					</div>
-					<div class="item">
-						<a href="./contact.html">
-							<img src="./images/banner.jpg" alt="First slide">
-						</a>
-					</div>
-				</div>
-				<!-- 轮播（Carousel）导航 -->
-				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-		</div>
-		<script>
-			$('#myCarousel').carousel({
-				interval: 3000
-			})
-		</script>
-	</div>
-	<!-- //banner -->
-	<!-- banner-bottom -->
-	<div class="banner-bottom">
-		<div class="container">
-			<div class="banner-bottom-grids">
-				<div class="forced">
-					<p>"让孩子拥有获得幸福的能力。"</p>
-				</div>
-				<div class="donate">
-					<div class="Alor">
-						<p>–呦呦龙珠儿童成长中心</p>
-					</div>
-					<div class="us">
-						<a href="contact.html" class="hvr-bounce-to-right read">预约试听</a>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //banner-bottom -->
-	<!-- history -->
-	<div id="history" class="history">
-		<div class="container">
-			<h3>公司介绍</h3>
-			<p class="libero">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;呦呦龙珠北京国际科技教育有限公司团队建立于2010年，致力于研发IQ、EQ双商课程，为中国儿童和家庭提供高品质多元化的国际化教育。
-				<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司旗下汇集了FUTURE ENVISION、金智立、龙笃笃等众多优秀教育品牌，拥有强大的研发及教学团队，培养了近万名在教育领域成绩斐然的教师；和美国、加拿大、新加坡等著名国际院校建立合作关系。教育核心体系将智商、情商课程完美融合，系统化、专业化、国际化、人性化。呦呦教育填补国内培训机构课程单一的空缺，用爱、责任、专业的教育理念，打造世界一流教育王国。为中国家庭提供专业的线上、线下一站式教育服务、定制家庭教育方案，让中国儿童从优质的早期教育中受益，拥有学习能力和探索世界的好奇心。
-				<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;呦呦教育将进一步承担起推动儿童教育进步的重任，不断致力于教育资源的均衡全方位发展，实现从教到育、从学到习、从身到心的全面提升。
-			</p>
-			<div class="history-grids">
-				<div class="col-md-6 history-grid">
-					<img class="one" src="images/about.png" alt=" " />
-				</div>
-				<div class="col-md-6 history-grid">
-					<div class="history-grid1">
-						<div class="history-grid-left">
-							<span> </span>
-						</div>
-						<div class="history-grid-right">
-							<h4>Dhaka Branch</h4>
-							<p>We Open in Jamalpur Branch in 2010</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="history-grid1">
-						<div class="history-grid-left1">
-							<span> </span>
-						</div>
-						<div class="history-grid-right">
-							<h4>Manikgonj Branch</h4>
-							<p>We Open in Jamalpur Branch in 2010</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="history-grid1">
-						<div class="history-grid-left2">
-							<span> </span>
-						</div>
-						<div class="history-grid-right">
-							<h4>Jamalpur Branch</h4>
-							<p>We Open in Jamalpur Branch in 2010</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="history-grid1">
-						<div class="history-grid-left3">
-							<span> </span>
-						</div>
-						<div class="history-grid-right">
-							<h4>Natore Branch</h4>
-							<p>We Open in Jamalpur Branch in 2010</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //history -->
 
-	<!-- team -->
-	<div id="team" class="team">
-		<div class="container">
-			<h3>团队介绍</h3>
-			<div class="team-grids">
-				<div class="col-md-3 team-grid">
-					<div class="thumbnail team-grid-main">
-						<img src="images/12.jpg" alt=" " />
-						<div class="caption pretium">
-							<h4>韩超</h4>
-							<p class="founder">龙笃笃课程研发主力成员</p>
-							<p>媒体、教育、互联与公益领域跨界创新者。曾经通过Harvard SEED社会创新summer camp在哈佛肯尼迪政治学院学习领导力课程。历任国际在线主持、主编、网络电台总监，家庭阅读跟踪研究者，儿童阅读分级推广者，积极推动提升儿童公共表达能力。</p>
-							<!--
-					<ul>
-						<li><a href="#" class="facebook"> </a></li>
-						<li><a href="#" class="twitter"> </a></li>
-						<li><a href="#" class="g-plus"> </a></li>
-						<li><a href="#" class="in"> </a></li>
-					</ul>
-					-->
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 team-grid">
-					<div class="thumbnail team-grid-main">
-						<img src="images/13.jpg" alt=" " />
-						<div class="caption pretium">
-							<h4>李杰</h4>
-							<p class="founder">清华大学AI博士</p>
-							<p>现旅居美国。人工智能、数据挖掘、语义分析专家，在大众心理学、教育学领域均有涉猎，尤其关注中美教育体系的比较研究和相互作用，以及华裔儿童、青少年的社会和情绪能力培养。主管龙笃笃理论技术架构。</p>
-							<!--
-					<ul>
-						<li><a href="#" class="facebook"> </a></li>
-						<li><a href="#" class="twitter"> </a></li>
-						<li><a href="#" class="g-plus"> </a></li>
-						<li><a href="#" class="in"> </a></li>
-					</ul>
-				-->
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 team-grid">
-					<div class="thumbnail team-grid-main">
-						<img src="images/14.jpg" alt=" " />
-						<div class="caption pretium">
-							<h4>李琳</h4>
-							<p class="founder">北京大学经济学学士</p>
-							<p>长期从事传文化、传播、培训等工作，致力于儿童情商培养与阅读能力养成体系研究多年，著有包括龙笃笃系列在内的儿童作品数十种，并主导研发了龙笃笃儿童情商课程。主管龙笃笃产品研发。</p>
-							<!--
-					<ul>
-						<li><a href="#" class="facebook"> </a></li>
-						<li><a href="#" class="twitter"> </a></li>
-						<li><a href="#" class="g-plus"> </a></li>
-						<li><a href="#" class="in"> </a></li>
-					</ul>
-					-->
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 team-grid">
-					<div class="thumbnail team-grid-main">
-						<img src="images/11.jpg" alt=" " />
-						<div class="caption pretium">
-							<h4>李红薇</h4>
-							<p class="founder">资深插画师</p>
-							<p>曾为杨鹏、金波、殷健灵、沈石溪等作家的作品创作插画，所绘插图曾获2012年五个一工程奖，创作出版了《小玉的一个白天》、《baby比一比》、《亲子互动认知绘本》等数十种儿童绘本。主管龙笃笃艺术品控。</p>
-							<!--
-					<ul>
-						<li><a href="#" class="facebook"> </a></li>
-						<li><a href="#" class="twitter"> </a></li>
-						<li><a href="#" class="g-plus"> </a></li>
-						<li><a href="#" class="in"> </a></li>
-					</ul>
-					-->
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //team -->
-	<!-- about -->
-	<!-- about -->
-	<div id="about" class="about">
-		<div class="container">
-			<h3>课程介绍</h3>
-			<div class="about-top-text">
-				<p>"基于美国前沿教育理论 结合中国典型成长场景"</p>
-			</div>
-			<p class="unique" style="text-align:left">北美前沿教育理论，五大核心能力，全维度覆盖情商各项素质。由心理学家、教育学家、行为学家等联合设计，覆盖美国、 新加坡、澳大利亚等国家和地区。十五年来，SEL给参与项目的学生带来显著效果：人际关系、处理问题能力甚至学习成绩均有明显提高。
-			</p>
-			<div class="about-grids">
-				<div class="col-md-6 about-grid">
-					<h2>课程视频</h2>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							<span class="sr-only">60% Complete</span>
-						</div>
-					</div>
-					<div class="about-grid-fig">
-						<img src="images/2.jpg" alt=" " />
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog">
-								<span> </span>
-							</a>
-						<!-- pop-up-box -->
-						<script type="text/javascript" src="js/modernizr.custom.min.js"></script>
-						<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-						<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-						<!--//pop-up-box -->
-						<div id="small-dialog" class="mfp-hide">
-							<iframe src="https://player.vimeo.com/video/269438515?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						</div>
-						<script>
-							$(document).ready(function() {
-								$('.popup-with-zoom-anim').magnificPopup({
-									type: 'inline',
-									fixedContentPos: false,
-									fixedBgPos: true,
-									overflowY: 'auto',
-									closeBtnInside: true,
-									preloader: false,
-									midClick: true,
-									removalDelay: 300,
-									mainClass: 'my-mfp-zoom-in'
-								});
+<header>
+	
+    <div class="top_menu">
+      <div class="container">
+        <span class="top_name">匈牙利国家公共卫生中心</span>
+         <div class="language">
+             <span> <a href="./login.html">注册/登陆</a></span>
+             语言选择：
+          <a href="javascript:;" title="中文版"><img src="images/Chinese.gif" alt="中文版"></a>
+          ∷&nbsp;
+          <a href="javascript:;" title="English"><img src="images/English.gif" alt="英文版"></a>
+         </div>
+      </div>
+    </div>
 
-							});
-						</script>
-					</div>
-				</div>
-				<div class="col-md-6 about-grid">
-					<h2 class="community">全维度情商学习矩阵</h2>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							<span class="sr-only">60% Complete</span>
-						</div>
-					</div>
-					<div class="mission-vision">
-						<div class="mission-grid">
-							<h4>48节课带给孩子</h4>
-							<div class="mission">
-								<p>12本SEL绘本 24则中国传统文化典故 12册绘日记；24+次当众宣讲体验 条理思维和逻辑讲述能力培养；6种情绪认知 3种情绪管理方法（控制愤怒 正面思考 克服焦虑）；12首经典英文儿歌 12个素质舞蹈／游戏</p>
-							</div>
-						</div>
-						<div class="vission-grid">
-							<h4>12项关键情商素质启蒙</h4>
-							<div class="mission">
-								<p>自我认知 协商与合作 沟通力 问题解决 目标设定及实现 观察力 同理心 人际交往 自控力 冲突处理 责任承担 差异容纳</p>
-							</div>
-						</div>
-						<div class="more">
-							<a href="contact.html" class="hvr-bounce-to-right">预约试听</a>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //about -->
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <a href="index.html"><img src="images/logo.png" class="logo" alt="欢迎光临~普什么森大学放射研究所"/></a>
 
-	<!-- activities -->
-	<div id="activities" class="activities">
-		<div class="container">
-			<h3>SEL龙笃笃情商阅读课程</h3>
-			<p class="libero">全方位了解情商素质项，多维度学习，理论联系实际，反复锤炼，让孩子拥有获得幸福的能力。</p>
-			<div class="news-grids">
-				<div class="col-md-5 news-grid">
-					<div class="news-grd">
-						<img src="images/15.jpg" alt=" " />
-						<div class="video">
-							<a href="#"><img src="images/8.png" alt=" " /></a>
-						</div>
-					</div>
-					<div class="news-grd-text">
-						<h4>SEL结合中国儿童成长场景</h4>
-						<p class="children">系统：十二个SEL单元覆盖SEL五大核心能力十二个关键情商素质
-							<br>专业：中美跨国团队为中国儿童度身研发
-							<br>融化级中体西用：彻底化用SEL教育体系，核心绘本以中国儿童形象为主角、以中国儿童日常行为生活为素材，特别打造</p>
-						<div class="more1">
-							<a href="contact.html" class="hvr-bounce-to-right">预约试听</a>
-						</div>
-						<div class="edit">
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-7 news-grid">
-					<div class="news-income">
-						<div class="news-grid-left">
-							<img class="steel" src="images/16.jpg" alt=" " />
-							<div class="gallery">
-								<a href="#"><img src="images/9.png" alt=" " /></a>
-							</div>
-						</div>
-						<div class="news-grid-right">
-							<div class="news-grd-text1">
-								<h4>五大核心能力</h4>
-								<p class="children">自我认知<br>自我管理<br>社会意识<br>人际交往<br>负责任的决策</p>
-								<div class="more1">
-									<a href="contact.html" class="hvr-bounce-to-right">预约试听</a>
-								</div>
-								<div class="edit">
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="news-income">
-						<div class="news-grid-left">
-							<img class="steel" src="images/17.jpg" alt=" " />
-							<div class="gallery">
-								<a href="#"><img src="images/10.png" alt=" " /></a>
-							</div>
-						</div>
-						<div class="news-grid-right">
-							<div class="news-grd-text1">
-								<h4>课程优势</h4>
-								<p class="children">先进理论支撑<br>多维度学习矩阵
-									<br>成果输出可见<br>教学资源丰富</p>
-								<div class="more1">
-									<a href="contact.html" class="hvr-bounce-to-right">预约试听</a>
-								</div>
-								<div class="edit">
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<div class="copyrights">Collect from <a href="http://www.cssmoban.com/">网页模板</a></div>
-	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#horizontalTab').easyResponsiveTabs({
-				type: 'default', //Types: default, vertical, accordion
-				width: 'auto', //auto or any width like 600px
-				fit: true // 100% fit in a container
-			});
-		});
-	</script>
-	<!-- //activities -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-nav-c">
+              <li class="dropdown">
+                  <a href="javascript:;">关于我们</a>
+                  <a href="javascript:;" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                  <ul class="dropdown-menu nav_small" role="menu">
+                      <li><a href="./graduateSchool.html">研究所介绍</a></li>
+                      <li><a href="./lorand.html">Dr. Lóránd Bertók (首席科学家)</a></li>
+                      <li><a href="javascript:;">Dr. Loljkfd (所长)</a></li>
+                      <li><a href="javascript:;">其他专家</a></li>
+                  </ul>
+              </li>
 
-	<!-- activities -->
-	<div id="activities" class="activities">
-		<div class="container">
-			<h3>成长历程</h3>
+            <!--<li><a href="javascript:;">公司简介</a></li>-->
+              <li class="dropdown">
+                  <a href="javascript:;">研究方向</a>
+                  <a href="javascript:;" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                  <ul class="dropdown-menu nav_small" role="menu">
+                      <li><a href="./tolerin.html">放射性去毒内毒素(托列宁 Tolerin)</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="javascript:;">研究成果</a>
+                  <a href="javascript:;" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                  <ul class="dropdown-menu nav_small" role="menu">
+                      <li><a href="lipol.html">人体淋巴网状免疫系统再建疫苗 - Lipol</a></li>
+                      <li><a href="lipol-chl.html">贝尔托科第二代胆固醇疫苗 - Lipol-CHL</a></li>
+                      <li><a href="lipol-mix.html">混合免疫修复疫苗 - Lipol-mix</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="javascript:;">基金会</a>
+                  <a href="javascript:;" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                  <ul class="dropdown-menu nav_small" role="menu">
+                      <li><a href="foundation.html">基金会介绍</a></li>
+                      <li><a href="aboutbjcapital.html">关于首创研发</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                    <a href="javascript:;">联系我们</a>
+                    <a href="javascript:;" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                      <ul class="dropdown-menu nav_small" role="menu">
+                          <li><a href="students.html">研究生及研究员招募</a></li>
+                          <li><a href="contact.html">联系方式</a></li>
+                      </ul>
+                  </li>
+
+          </ul>-
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+</header>
+
+    <!-- bxslider -->
+    <div class="flash">
+        <ul class="bxslider">
+            <li><a href="lipol.html"><img src="images/Lipol.jpg" alt="" /></a></li>
+            <li><a href="lipol-chl.html"><img src="images/Lipol-CHL.jpg" alt="" /></a></li>
+            <li><a href="lipol-mix.html"><img src="images/Lipol-mix.jpg" alt="" /></a></li>
+        </ul>
+    </div><script type="text/javascript">
+    $('.bxslider').bxSlider({
+      adaptiveHeight: true,
+      infiniteLoop: true,
+      hideControlOnEnd: true,
+      auto:true
+    });
+</script>
+
+    <!-- main -->
+    <div class="container aboutus">    
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <img src="images/about.png" alt="研究所简介">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <h2>研究所简介</h2>
+                <span>Company introduction</span>
+                <p><p class="about_contents">
+                德布勒森大学的前身可追溯到德布勒森加尔文学院，成立于1538年。20世纪初，该校升格为大学。 德布勒森大学位于德布勒森，于2000年1月1日由原有几个独立学院重组而成。学校现有约26000名学生，其中16000为全日制学生，有1700余名教师，奠定了其匈牙利最大高等学府的基础。大学拥有13个系和2个独立学院，学科覆盖文、理、农、医、管理等多个领域。
+            </p></p>
+                <a href="./graduateSchool.html" class="view-all">查看更多</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="our_service" style="background-image: url(images/57344e66ec33d.jpg); background-size: cover;background-attachment: fixed;"> 
+        <div class="container">    
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-7">
+                <h2>放射性去毒内毒素(托列宁 Tolerin)</h2>
+                <p><p class="about_contents">
+                    -内毒素耐受性（在提前治疗的情况下，可防止内毒素引起的休克）
+                    - 防止血液中毒（脓血症）(结肠性腹膜炎，在提前治疗的情况下，治愈率超过95 %，可预防结肠肿瘤患者的术后脓毒症)
+                    -预防放射性疾病 （在致命性辐射的情况下，生存率为70%）
+                    -预防治疗癌症药物的副作用（比如可提高癌症患者的骨髓活性）
+
+                </p></p>
+                <a href="./tolerin.html" class="service-all">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="index_product">
+                        <h2>研究成果</h2>
+                        <span>THE LATEST PRODUCTS</span>
+                        <div class="product_list">
+                            <div class="col-sm-4 col-md-3 col-mm-6 product_img">
+                                <a href="lipol.html">
+                                    <img src="images/lipol-logo.png" class="img-thumbnail" alt="Lipol">
+                                </a>
+                                <p class="product_title"><a href="lipol.html" title="Lipol">Lipol在免疫恢复中的应用</a></p>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-mm-6 product_img">
+                                <a href="lipol-chl.html">
+                                    <img src="images/lipol-chl-logo.png" class="img-thumbnail" alt="Lipol CHL">
+                                </a>
+                                <p class="product_title"><a href="lipol-chl.html" title="Lipol CHL">Lipol CHL在胆固醇抗体中的应用</a></p>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-mm-6 product_img">
+                                <a href="lipol-mix.html">
+                                    <img src="images/Lipol-Mix-logo.png" class="img-thumbnail" alt="Lipol MIX">
+                                </a>
+                                <p class="product_title"><a href="lipol-mix.html" title="Lipol MIX在免疫恢复中的应用">Lipol MIX在免疫恢复中的应用</a></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-8 col-md-7">
+                <div class="news_box">
+                    <h2 class="title_h2">What's </h2>
+                    <ul class="index_news">
+                        <li><a href="javascript:;" title="油价上涨激发勘探业石油钻探设备出">什么是胆固醇</a><span class='news_time'>2013-09-28</span></li>
+                        <li><a href="javascript:;" title="涨激发勘探业石油钻探设备出口激增">涨激发勘探业石油钻探设备出口激增</a><span class='news_time'>2013-05-06</span></li>
+                        <li><a href="javascript:;" title="公司全面实施国际质量管理和质量保证体系">公司全面实施国际质量管理和质量保证体系</a><span class='news_time'>2013-05-06</span></li>
+                        <li><a href="javascript:;" title="迎中兴金鸡湖花园开盘，大型团装团购征集样板房活动">迎中兴金鸡湖花园开盘，大型团装团购征集样板房活动</a><span class='news_time'>2013-12-19</span></li>  </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-5">
+                <div class="index_contact">
+                    <h2 class="title_h2">友情链接</h2>
+                    <ul class="index_news">
+                        <li><a href="javascript:;" title="油价上涨激发勘探业石油钻探设备出">匈牙利科学院</a><span class='news_time'>2013-09-28</span></li>
+                        <li><a href="javascript:;" title="涨激发勘探业石油钻探设备出口激增">牛津大学医学院</a><span class='news_time'>2013-05-06</span></li>
+                        <li><a href="javascript:;" title="公司全面实施国际质量管理和质量保证体系">公司全面实施国际质量管理和质量保证体系</a><span class='news_time'>2013-05-06</span></li>
+                        <li><a href="javascript:;" title="迎中兴金鸡湖花园开盘，大型团装团购征集样板房活动">迎中兴金鸡湖花园开盘，大型团装团购征集样板房活动</a><span class='news_time'>2013-12-19</span></li>  </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-8 col-md-7">
+                    <div class="news_box">
+                        <h2 class="title_h2">新闻活动</h2>
+                        <ul class="index_news">
+                         <li><a href="javascript:;" title="油价上涨激发勘探业石油钻探设备出">油价上涨激发勘探业石油钻探设备出</a><span class='news_time'>2013-09-28</span></li>
+                         <li><a href="javascript:;" title="涨激发勘探业石油钻探设备出口激增">涨激发勘探业石油钻探设备出口激增</a><span class='news_time'>2013-05-06</span></li>
+                         <li><a href="javascript:;" title="公司全面实施国际质量管理和质量保证体系">公司全面实施国际质量管理和质量保证体系</a><span class='news_time'>2013-05-06</span></li>
+                         <li><a href="javascript:;" title="迎中兴金鸡湖花园开盘，大型团装团购征集样板房活动">迎中兴金鸡湖花园开盘，大型团装团购征集样板房活动</a><span class='news_time'>2013-12-19</span></li>  </ul>
+                    </div>
+                    <div class="input-group search_group">
+                        <input type="text" name="name" class="form-control input-sm" placeholder="文章搜索">
+                <span class="input-group-btn">
+                    <span id="submit_search" onclick="searchform.submit();" title="文章搜索" class="glyphicon glyphicon-search btn-lg" aria-hidden="true"></span>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-5">
+                    <div class="index_contact">
+                        <h2 class="title_h2">联系我们</h2>
+                        <p style="padding-top:25px;">联系人：代码库</p>
+                        <p>手机：873468834</p>
+                        <p>电话：020-873468834</p>
+                        <p>邮箱：dmaku@163.com</p>
+                        <p>地址： 广东省广州市天河区天平架沙太路沙太路</p>
+                    </div>
+                    <div class="btn-group dropup" style="margin-bottom:15px;">
+                          <button type="button" class="btn btn-default btn-sm" data-toggle="dropdown" aria-expanded="false" style="line-height:13px;">&nbsp;&nbsp;&nbsp;&nbsp;友情链接&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                          <button type="button" class="btn btn-default dropdown-toggle btn-sm"  style="line-height:13px;">
+                            <span class="caret"></span>
+                            <span class="sr-only">友情链接</span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a target="_blank" href="http://bulamao.taobao.com">淘宝店</a></li><li><a target="_blank" href="http://www.dmaku.com">代码库外贸网站</a></li>                      </ul>
+                     </div>
+            </div>
+
+        </div>
 
 
-			<div class="history-faq-grids">
-				<div class="history-faq-grid">
-					<h4>重要时刻</h4>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							<span class="sr-only">60% Complete</span>
-						</div>
-					</div>
-					<div class="sap_tabs">
-						<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-							<ul class="resp-tabs-list">
-								<li class="resp-tab-item grid1" aria-controls="tab_item-0" role="tab"><span>2012</span></li>
-								<li class="resp-tab-item grid2" aria-controls="tab_item-1" role="tab"><span>2013</span></li>
-								<li class="resp-tab-item grid3" aria-controls="tab_item-2" role="tab"><span>2014</span></li>
-								<li class="resp-tab-item grid5" aria-controls="tab_item-3" role="tab"><span>2015</span></li>
-								<li class="resp-tab-item grid6" aria-controls="tab_item-4" role="tab"><span>2016</span></li>
-								<li class="resp-tab-item grid7" aria-controls="tab_item-5" role="tab"><span>2017</span></li>
-								<div class="clear"></div>
-							</ul>
-							<div class="resp-tabs-container">
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-									<div class="facts">
-										<ul class="tab_list">
-											<li><a href="#">2012.12</a></li>
-											<li><a href="#">龙笃笃项目启动，由美加团队提供技术及理论支持，中国团队负责内容研发。</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-									<div class="facts">
-										<ul class="tab_list">
-											<li><a href="#">2013.04</a></li>
-											<li><a href="#">龙笃笃第一代APP在苹果App Store上线，同时上线4本电子绘本。</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-									<div class="facts">
-										<ul class="tab_list">
-											<li><a href="#">2014.01</a></li>
-											<li><a href="#">龙笃笃SEL情商阅读包规划完成，人设完成。</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
-									<div class="facts">
-										<ul class="tab_list">
-											<li><a href="#">2015.05</a></li>
-											<li><a href="#">龙笃笃SEL情商阅读绘本第一辑《我把幼儿园变没了》、《糖果世界》、《阿米要离家出走》、《怕黑的咕里》和《绿手指胖罗》由北京师范大学出版社出版，第一辑五个故事的主题为儿童情绪认知与管理和自我认知。</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-4">
-									<div class="facts">
-										<ul class="tab_list">
-											<li><a href="#">2016.06</a></li>
-											<li><a href="#">龙笃笃第二代APP上架，配合龙笃笃情商阅读包，提供3D/AR互动动画。</a></li>
-											<br>
-											<li><a href="#">2016.12</a></li>
-											<br>
-											<li><a href="#">龙笃笃SEL情商阅读包制作完成，一共包含12个主题绘本，提供配套有声书，并附有绘日记、绘色卡和贴纸等内容。</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-5">
-									<div class="facts">
-										<ul class="tab_list">
-											<li><a href="#">2017.07</a></li>
-											<li><a href="#">龙笃笃SEL情商阅读课程的课件及教案完成，包括龙笃笃读、龙笃笃说、龙笃笃学和龙笃笃唱等课程形式，覆盖12项关键情商素质启蒙。</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+    </div>
+     
+    <nav class="navbar navbar-default navbar-fixed-bottom footer_nav">
+    <div class="foot_nav btn-group dropup">
+        <a class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:;">
+            <span class="glyphicon glyphicon-share btn-lg" aria-hidden="true"></span>
+            分享</a>  
+            <div class="dropdown-menu webshare">
+            <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="javascript:;" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+</div>
+<script type="text/javascript" src="js/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->            </div>
+    </div>
+    <div class="foot_nav"><a href="javascript:;"><span class="glyphicon glyphicon-phone btn-lg" aria-hidden="true"></span>手机</a></div>
+    <div class="foot_nav"><a id="gotocate" href="javascript:;"><span class="glyphicon glyphicon-th-list btn-lg" aria-hidden="true"></span>分类</a></div>
+    <div class="foot_nav"><a id="gototop" href="javascript:;"><span class="glyphicon glyphicon-circle-arrow-up btn-lg" aria-hidden="true"></span>顶部</a></div>
+</nav>
 
-				</div>
+<footer>
+    <div class="copyright">
+        <p>CopyRight 2013 All Right Reserved 代码库外贸网站&nbsp;ICP:873468834 <a href="javascript:;" target="_blank">网站地图</a></p>
+        <p class="copyright_p">地址：广东省广州市天河区天平架沙太路沙太路 &nbsp;电话：020-873468834 &nbsp;传真：020-98-873468834&nbsp;</p>
+    </div>
+     
+</footer>
 
-				<!--
-				<div class="col-md-6 history-faq-grid">
-					<h4>Faq</h4>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-						<span class="sr-only">60% Complete</span>
-					  </div>
-					</div>
-					<div class="faq-info">
-						<div class="eiusmod">
-							<p class="para">Enim eiusmod high life accusamus?</p>
-							<p class="para1">Anim pariatur cliche reprehenderit, enim eiusmod
-							high life accusamus terry richardson ad squid. 3 wolf moon officia
-							aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-							nesciunt laborum.</p>
-						</div>
-						<div class="keffiyeh">
-							<p>Nihil anim keffiyeh helvetica?</p>
-						</div>
-						<div class="butcher">
-							<p>Vegan excepteur butcher vice lomo?</p>
-						</div>
-					</div>
-				</div>
-			-->
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<div class="copyrights">Collect from <a href="http://www.cssmoban.com/">网页模板</a></div>
-	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#horizontalTab').easyResponsiveTabs({
-				type: 'default', //Types: default, vertical, accordion
-				width: 'auto', //auto or any width like 600px
-				fit: true // 100% fit in a container
-			});
-		});
-	</script>
-	<!-- //activities -->
-	<!-- work -->
-	<div class="work">
-		<div class="container">
-			<h3>OUR WORK PROCESS</h3>
-			<div class="work-grids">
-				<div class="col-md-2 work-grid">
-					<div class="thumbnail">
-						<div class="first-step">
-							<span> </span>
-						</div>
-						<div class="caption">
-							<h4>First step</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2 work-grid">
-					<div class="thumbnail">
-						<div class="first-step1">
-							<span> </span>
-						</div>
-						<div class="caption">
-							<h4>Second step</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2 work-grid">
-					<div class="thumbnail">
-						<div class="first-step2">
-							<span> </span>
-						</div>
-						<div class="caption">
-							<h4>Third step</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2 work-grid">
-					<div class="thumbnail">
-						<div class="first-step3">
-							<span> </span>
-						</div>
-						<div class="caption">
-							<h4>Fourth step</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2 work-grid">
-					<div class="thumbnail">
-						<div class="first-step4">
-							<span> </span>
-						</div>
-						<div class="caption">
-							<h4>Fifth step</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2 work-grid">
-					<div class="thumbnail">
-						<div class="first-step5">
-							<span> </span>
-						</div>
-						<div class="caption">
-							<h4>Last step</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis</p>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //work -->
+<!--客服面板-->
+    <link rel="stylesheet" type="text/css" href="css/online.css" />
+    <div id="cmsFloatPanel">
+         <div class="ctrolPanel">
+               <a class="service" href="javascript:;"></a>
+               <a class="message" href="javascript:;"></a>
+               <a class="qrcode" href="javascript:;"></a>
+               <a class="arrow" title="返回顶部" href="javascript:;"></a>
+         </div>
+         <div class="servicePanel">
+              <div class="servicePanel-inner">
+                   <div class="serviceMsgPanel">
+                        <div class="serviceMsgPanel-hd"><a href="javascript:;"><span>关闭</span></a></div>
+                        <div class="serviceMsgPanel-bd">
+                          <!--在线QQ-->
+                          <div class="msggroup">
+                                    <a target="_blank" href="javascript:;"><img class="qqimg" src="http://wpa.qq.com/pa?p=2:873468834:52" alt="QQ在线客服"/>技术支持</a>
+                                </div>                          <!--在线MSN-->  
+                          <div class="msggroup">
+                                <a href="javascript:;" target="blank"><img class="qqimg" src="images/msn.jpg" alt="MSN在线客服"/> dmaku</a>
+                               </div>                          <!--在线SKYPE--> 
+                          <div class="msggroup">
+                                <a href="javascript:;"><img  class="qqimg" src="images/skype.gif" alt="SKYPE在线客服"> dmaku</a>
+                              </div>                          <!--淘宝旺旺--> 
+                          <div class="msggroup">
+                                <a target=blank href="javascript:;"><img SRC="http://amos.im.alisoft.com/online.aw?v=2&uid=代码库&site=cntaobao&s=1&charset=utf-8" alt="点击联系我"></a>
+                               </div>                          <!--旺旺国内版--> 
+                          <div class="msggroup">
+                                <a target="_blank" href="javascript:;" ><img src="http://amos.alicdn.com/online.aw?v=2&uid=martin7752&site=cnalichn&s=10&charset=UTF-8" alt="点击联系我"/></a>
+                              </div>                          <!--旺旺国际版-->
+                          <div class="msggroup">
+                                <a class="alitalk-link" data-uid="alibabatest01" target="_blank" href="javascript:;"><img class="qqimg" src="http://amos.alicdn.com/online.aw?v=2&uid=alibabatest01&site=enaliint&s=22&charset=UTF-8" alt="点击联系我"/> dmaku</a>
+                               </div>                          
+                        </div>
+                        <div class="serviceMsgPanel-ft"></div>
+                    </div>
+                    <div class="arrowPanel">
+                         <div class="arrow02"></div>
+                    </div>
+              </div>
+         </div>
+         <div class="messagePanel">
+              <div class="messagePanel-inner">
+                   <div class="formPanel">
+                        
+                         <div class="formPanel-bd">
+                            <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="javascript:;" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+</div>
+<script type="text/javascript" src="js/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->                            <a type="button" class="btn btn-default btn-xs" href="javascript:;" style="margin: 6px 0px 0px 10px;">关闭</a>
+                         </div>
 
-	<!-- our-childrens -->
-	<div id="childrens" class="our-childrens">
-		<div class="container">
-			<h3>精彩瞬间</h3>
-			<div class="our-childrens-grids">
-				<div class="col-md-3 our-childrens-grid">
-					<a href="images/3-2.jpg" class="b-link-stripe b-animate-go   swipebox" title="">
-						<img class="one" src="images/3-2.jpg" alt=" " title="Science Laboratory" />
-						<div class="b-wrapper">
-							<h2 class="b-animate b-from-left    b-delay03 ">
-
-								<div class="text-info">
-								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
-									<h4>About Robin</h4>
-									<p>I am Robin.I read In informal school in
-										<span>Dhaka Branch.</span></p>
-								</div>
-							</h2>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 our-childrens-grid">
-					<a href="images/4-2.jpg" class="b-link-stripe b-animate-go   swipebox" title="">
-						<img class="one" src="images/4-2.jpg" alt=" " title="Science Laboratory" />
-						<div class="b-wrapper">
-							<h2 class="b-animate b-from-left    b-delay03 ">
-
-								<div class="text-info">
-								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
-									<h4>About Robin</h4>
-									<p>I am Robin.I read In informal school in
-										<span>Dhaka Branch.</span></p>
-								</div>
-							</h2>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 our-childrens-grid">
-					<a href="images/5-2.jpg" class="b-link-stripe b-animate-go   swipebox" title="">
-						<img class="one" src="images/5-2.jpg" alt=" " title="Science Laboratory" />
-						<div class="b-wrapper">
-							<h2 class="b-animate b-from-left    b-delay03 ">
-
-								<div class="text-info">
-								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
-									<h4>About Robin</h4>
-									<p>I am Robin.I read In informal school in
-										<span>Dhaka Branch.</span></p>
-								</div>
-							</h2>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 our-childrens-grid">
-					<a href="images/6-2.jpg" class="b-link-stripe b-animate-go   swipebox" title="">
-						<img class="one" src="images/6-2.jpg" alt=" " title="Science Laboratory" />
-						<div class="b-wrapper">
-							<h2 class="b-animate b-from-left    b-delay03 ">
-
-								<div class="text-info">
-								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
-									<h4>About Robin</h4>
-									<p>I am Robin.I read In informal school in
-										<span>Dhaka Branch.</span></p>
-								</div>
-							</h2>
-						</div>
-					</a>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="our-childrens-grids">
-				<div class="col-md-3 our-childrens-grid">
-					<a href="images/7-2.jpg" class="b-link-stripe b-animate-go   swipebox" title="">
-						<img class="one" src="images/7-2.jpg" alt=" " title="Science Laboratory" />
-						<div class="b-wrapper">
-							<h2 class="b-animate b-from-left    b-delay03 ">
-
-								<div class="text-info">
-								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
-									<h4>About Robin</h4>
-									<p>I am Robin.I read In informal school in
-										<span>Dhaka Branch.</span></p>
-								</div>
-							</h2>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 our-childrens-grid">
-					<a href="images/8-2.jpg" class="b-link-stripe b-animate-go   swipebox" title="">
-						<img class="one" src="images/8-2.jpg" alt=" " title="Science Laboratory" />
-						<div class="b-wrapper">
-							<h2 class="b-animate b-from-left    b-delay03 ">
-
-								<div class="text-info">
-								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
-									<h4>About Robin</h4>
-									<p>I am Robin.I read In informal school in
-										<span>Dhaka Branch.</span></p>
-								</div>
-							</h2>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 our-childrens-grid">
-					<a href="images/9-2.jpg" class="b-link-stripe b-animate-go   swipebox" title="">
-						<img class="one" src="images/9-2.jpg" alt=" " title="Science Laboratory" />
-						<div class="b-wrapper">
-							<h2 class="b-animate b-from-left    b-delay03 ">
-
-								<div class="text-info">
-								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
-									<h4>About Robin</h4>
-									<p>I am Robin.I read In informal school in
-										<span>Dhaka Branch.</span></p>
-								</div>
-							</h2>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 our-childrens-grid">
-					<a href="images/10-2.jpg" class="b-link-stripe b-animate-go   swipebox" title="">
-						<img class="one" src="images/10-2.jpg" alt=" " title="Science Laboratory" />
-						<div class="b-wrapper">
-							<h2 class="b-animate b-from-left    b-delay03 ">
-
-								<div class="text-info">
-								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
-									<h4>About Robin</h4>
-									<p>I am Robin.I read In informal school in
-										<span>Dhaka Branch.</span></p>
-								</div>
-							</h2>
-						</div>
-					</a>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<link rel="stylesheet" href="css/swipebox.css">
-	<script src="js/jquery.swipebox.min.js"></script>
-	<script type="text/javascript">
-		jQuery(function($) {
-			$(".swipebox").swipebox();
-		});
-	</script>
-	<!-- //our-childrens -->
-
-	<!-- lorum -->
-	<div class="lorum">
-		<div class="container">
-			<div class="lorum-info">
-				<h3></h3>
-			</div>
-		</div>
-	</div>
-	<!-- //lorum -->
-	<h3></h3>
-	<!-- contact -->
-	<!-- //contact -->
-	<div id="contact" class="contact">
-		<div class="container">
-			<div class="row card">
-				<div class="col-md-12">
-					<form class="form-light" role="form">
-						<fieldset>
-							<legend class="form-title">申请信息</legend>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label>姓名</label>
-										<input type="text" class="form-control" placeholder="请输入姓名">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label>性别</label>
-										<select name="contactAvailableTime" class="form-control" id="contactAvailableTime">
-											<option value="1">男</option>
-											<option value="2">女</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label>手机号</label>
-										<input type="tel" class="form-control">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label>邮箱</label>
-										<input type="email" class="form-control">
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label>申请城市</label>
-										<select name="province" class="form-control" id="province"></select>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label>&nbsp;</label>
-										<select name="city" class="form-control" id="city"></select>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label>最佳联系时间</label>
-										<select name="contactAvailableDay" class="form-control" id="contactAvailableDay">
-											<option value="0">随时</option>
-											<option value="1">工作日</option>
-											<option value="2">节假日</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label>&nbsp;</label>
-										<select name="contactAvailableTime" class="form-control" id="contactAvailableTime">
-											<option value="0">任何时间</option>
-											<option value="1">上午(9:00 -- 12:00)</option>
-											<option value="2">下午(13:00 -- 18:00)</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="btn-block more">
-								<a class="hvr-bounce-to-right" href="javascript:;">提交申请</a>
-							</div>
-							<p><br></p>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="footer-grids">
-				<div class="footer-grid-left">
-					<a href="index.html"><img src="images/footer-logo.png" alt=" " /></a>
-				</div>
-				<!--
-				<div class="footer-grid-center">
-					<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-				</div>
-				<div class="footer-grid-right">
-					<ul>
-						<li><a href="#" class="f"> </a></li>
-						<li><a href="#" class="t"> </a></li>
-						<li><a href="#" class="g"> </a></li>
-						<li><a href="#" class="i"> </a></li>
-					</ul>
-				</div>
-				-->
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //footer -->
-
-	<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear'
-				};
-			*/
-
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
-			$('#myModal').modal()
-			new ProvinceCitySelects()
-		});
-	</script>
-	<!-- //here ends scrolling icon -->
-</body>
-
-</html>
+                   </div>
+                   <div class="arrowPanel">
+                        <div class="arrow01"></div>
+                        <div class="arrow02"></div>
+                   </div>
+              </div>
+         </div>
+         <div class="qrcodePanel">
+              <div class="qrcodePanel-inner">
+                   <div class="codePanel">
+                         <div class="codePanel-hd"><span style="float:left">用手机扫描二维码</span><a href="javascript:;"><span>关闭</span></a></div>
+                         <div class="codePanel-bd">
+                              <img src="images/529c3fcc09d41.jpg" alt="二维码"/>
+                         </div>
+                   </div>
+                   <div class="arrowPanel">
+                        <div class="arrow01"></div>
+                        <div class="arrow02"></div>
+                   </div>
+              </div>
+         </div>    </div>
+    <script type="text/javascript" src="js/online.js"></script>
+  </body>
+</html><script type="text/javascript">
+var winHeight=200;
+var timer=null;
+function show(){
+    document.getElementById("popWin").style.display="block"; 
+    timer=setInterval("lift(5)",2);
+} 
+function hid(){
+        timer=setInterval("lift(-5)",2);
+} 
+function lift(n) { 
+    var w=document.getElementById("popWin"); 
+    var h=parseInt(w.style.height||w.currentStyle.height);
+    if (h<winHeight && n>0 || h>1 && n<0){
+        w.style.height=(h+n).toString()+"px"; 
+    } 
+    else
+        {
+        w.style.display=(n>0?"block":"none");
+                clearInterval(timer);
+    } 
+} 
+window.onload=function(){ 
+        setTimeout("show()",1000);
+} 
+</script>
