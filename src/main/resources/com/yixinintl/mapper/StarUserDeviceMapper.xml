@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yixinintl.mapper.StarUserDeviceMapper">
+  <resultMap id="BaseResultMap" type="com.yixinintl.domain.StarUserDevice">
+    <result column="device_id" jdbcType="BIGINT" property="deviceId" />
+    <result column="device_type" jdbcType="TINYINT" property="deviceType" />
+    <result column="device_token" jdbcType="VARCHAR" property="deviceToken" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="jpush_im_pwd" jdbcType="VARCHAR" property="jpushImPwd" />
+  </resultMap>
+  <insert id="insert" parameterType="com.yixinintl.domain.StarUserDevice">
+    insert into star_user_device (device_id, device_type, device_token, 
+      user_id, update_time, create_time, 
+      jpush_im_pwd)
+    values (#{deviceId,jdbcType=BIGINT}, #{deviceType,jdbcType=TINYINT}, #{deviceToken,jdbcType=VARCHAR}, 
+      #{userId,jdbcType=BIGINT}, #{updateTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{jpushImPwd,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yixinintl.domain.StarUserDevice">
+    insert into star_user_device
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="deviceId != null">
+        device_id,
+      </if>
+      <if test="deviceType != null">
+        device_type,
+      </if>
+      <if test="deviceToken != null">
+        device_token,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="jpushImPwd != null">
+        jpush_im_pwd,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="deviceId != null">
+        #{deviceId,jdbcType=BIGINT},
+      </if>
+      <if test="deviceType != null">
+        #{deviceType,jdbcType=TINYINT},
+      </if>
+      <if test="deviceToken != null">
+        #{deviceToken,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="jpushImPwd != null">
+        #{jpushImPwd,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.yixinintl.domain.StarUserDevice">
+    <result column="device_id" jdbcType="BIGINT" property="deviceId" />
+    <result column="device_type" jdbcType="TINYINT" property="deviceType" />
+    <result column="device_token" jdbcType="VARCHAR" property="deviceToken" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="jpush_im_pwd" jdbcType="VARCHAR" property="jpushImPwd" />
+  </resultMap>
+  <insert id="insert" parameterType="com.yixinintl.domain.StarUserDevice">
+    insert into star_user_device (device_id, device_type, device_token, 
+      user_id, update_time, create_time, 
+      jpush_im_pwd)
+    values (#{deviceId,jdbcType=BIGINT}, #{deviceType,jdbcType=TINYINT}, #{deviceToken,jdbcType=VARCHAR}, 
+      #{userId,jdbcType=BIGINT}, #{updateTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{jpushImPwd,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yixinintl.domain.StarUserDevice">
+    insert into star_user_device
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="deviceId != null">
+        device_id,
+      </if>
+      <if test="deviceType != null">
+        device_type,
+      </if>
+      <if test="deviceToken != null">
+        device_token,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="jpushImPwd != null">
+        jpush_im_pwd,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="deviceId != null">
+        #{deviceId,jdbcType=BIGINT},
+      </if>
+      <if test="deviceType != null">
+        #{deviceType,jdbcType=TINYINT},
+      </if>
+      <if test="deviceToken != null">
+        #{deviceToken,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="jpushImPwd != null">
+        #{jpushImPwd,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+  <classPathEntry location="/Users/qiang/.m2/repository/mysql/mysql-connector-java/5.1.21/mysql-connector-java-5.1.21.jar" />
+
+  <context id="Mysql2Tables" targetRuntime="MyBatis3">
+   <!-- 这里引入扩展插件    -->
+    <commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://rdsd72qi3vk4r7pli9d7o.mysql.rds.aliyuncs.com:3306/star?useUnicode=true" userId="super_admin"
+			password="HSY2017goodluck">
+    </jdbcConnection>
+
+    <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+
+
+	<!-- targetProject:自动生成代码的位置 -->
+		<javaModelGenerator targetPackage="com.yixinintl.domain"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="com.yixinintl.mapper"
+			targetProject="src/main/resources">
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.yixinintl.mapper" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+<!-- 	  <table schema="t1" tableName="t1"
+			 domainObjectName="t1" enableCountByExample="false"
+			 enableUpdateByExample="false" enableDeleteByExample="false"
+			 enableSelectByExample="false" selectByExampleQueryId="false">
+	  </table>
+ -->
+ 	  <table schema="StarUser" tableName="star_user"
+			 domainObjectName="StarUser" enableCountByExample="false"
+			 enableUpdateByExample="false" enableDeleteByExample="false"
+			 enableSelectByExample="false" selectByExampleQueryId="false">
+	  </table>
+	  <table schema="StarUserDevice" tableName="star_user_device"
+			 domainObjectName="StarUserDevice" enableCountByExample="false"
+			 enableUpdateByExample="false" enableDeleteByExample="false"
+			 enableSelectByExample="false" selectByExampleQueryId="false">
+	  </table>
+
+  </context>
+</generatorConfiguration>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yixinintl.mapper.StarUserMapper">
+  <resultMap id="BaseResultMap" type="com.yixinintl.domain.StarUser">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="user_phone" jdbcType="VARCHAR" property="userPhone" />
+    <result column="user_pwd" jdbcType="VARCHAR" property="userPwd" />
+    <result column="third_party_type" jdbcType="INTEGER" property="thirdPartyType" />
+    <result column="third_party_id" jdbcType="VARCHAR" property="thirdPartyId" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="age" jdbcType="VARCHAR" property="age" />
+    <result column="horoscope" jdbcType="VARCHAR" property="horoscope" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+    <result column="sign" jdbcType="VARCHAR" property="sign" />
+    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="last_login_type" jdbcType="TINYINT" property="lastLoginType" />
+    <result column="pic_url" jdbcType="VARCHAR" property="picUrl" />
+    <result column="ticket_count" jdbcType="INTEGER" property="ticketCount" />
+    <result column="vip_validity" jdbcType="TIMESTAMP" property="vipValidity" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="gift_count" jdbcType="INTEGER" property="giftCount" />
+    <result column="balance" jdbcType="DECIMAL" property="balance" />
+    <result column="realName" jdbcType="VARCHAR" property="realname" />
+    <result column="idCard" jdbcType="VARCHAR" property="idcard" />
+    <result column="bindTo" jdbcType="BIGINT" property="bindto" />
+    <result column="user_status" jdbcType="CHAR" property="userStatus" />
+    <result column="role" jdbcType="CHAR" property="role" />
+  </resultMap>
+  <insert id="insert" parameterType="com.yixinintl.domain.StarUser">
+    insert into star_user (id, user_id, user_phone, 
+      user_pwd, third_party_type, third_party_id, 
+      nickname, sex, age, 
+      horoscope, location, sign, 
+      last_login_time, last_login_type, pic_url, 
+      ticket_count, vip_validity, create_time, 
+      gift_count, balance, realName, 
+      idCard, bindTo, user_status, 
+      role)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{userPhone,jdbcType=VARCHAR}, 
+      #{userPwd,jdbcType=VARCHAR}, #{thirdPartyType,jdbcType=INTEGER}, #{thirdPartyId,jdbcType=VARCHAR}, 
+      #{nickname,jdbcType=VARCHAR}, #{sex,jdbcType=TINYINT}, #{age,jdbcType=VARCHAR}, 
+      #{horoscope,jdbcType=VARCHAR}, #{location,jdbcType=VARCHAR}, #{sign,jdbcType=VARCHAR}, 
+      #{lastLoginTime,jdbcType=TIMESTAMP}, #{lastLoginType,jdbcType=TINYINT}, #{picUrl,jdbcType=VARCHAR}, 
+      #{ticketCount,jdbcType=INTEGER}, #{vipValidity,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{giftCount,jdbcType=INTEGER}, #{balance,jdbcType=DECIMAL}, #{realname,jdbcType=VARCHAR}, 
+      #{idcard,jdbcType=VARCHAR}, #{bindto,jdbcType=BIGINT}, #{userStatus,jdbcType=CHAR}, 
+      #{role,jdbcType=CHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yixinintl.domain.StarUser">
+    insert into star_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="userPhone != null">
+        user_phone,
+      </if>
+      <if test="userPwd != null">
+        user_pwd,
+      </if>
+      <if test="thirdPartyType != null">
+        third_party_type,
+      </if>
+      <if test="thirdPartyId != null">
+        third_party_id,
+      </if>
+      <if test="nickname != null">
+        nickname,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="horoscope != null">
+        horoscope,
+      </if>
+      <if test="location != null">
+        location,
+      </if>
+      <if test="sign != null">
+        sign,
+      </if>
+      <if test="lastLoginTime != null">
+        last_login_time,
+      </if>
+      <if test="lastLoginType != null">
+        last_login_type,
+      </if>
+      <if test="picUrl != null">
+        pic_url,
+      </if>
+      <if test="ticketCount != null">
+        ticket_count,
+      </if>
+      <if test="vipValidity != null">
+        vip_validity,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="giftCount != null">
+        gift_count,
+      </if>
+      <if test="balance != null">
+        balance,
+      </if>
+      <if test="realname != null">
+        realName,
+      </if>
+      <if test="idcard != null">
+        idCard,
+      </if>
+      <if test="bindto != null">
+        bindTo,
+      </if>
+      <if test="userStatus != null">
+        user_status,
+      </if>
+      <if test="role != null">
+        role,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="userPhone != null">
+        #{userPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="userPwd != null">
+        #{userPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="thirdPartyType != null">
+        #{thirdPartyType,jdbcType=INTEGER},
+      </if>
+      <if test="thirdPartyId != null">
+        #{thirdPartyId,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null">
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=TINYINT},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="horoscope != null">
+        #{horoscope,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="sign != null">
+        #{sign,jdbcType=VARCHAR},
+      </if>
+      <if test="lastLoginTime != null">
+        #{lastLoginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastLoginType != null">
+        #{lastLoginType,jdbcType=TINYINT},
+      </if>
+      <if test="picUrl != null">
+        #{picUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="ticketCount != null">
+        #{ticketCount,jdbcType=INTEGER},
+      </if>
+      <if test="vipValidity != null">
+        #{vipValidity,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="giftCount != null">
+        #{giftCount,jdbcType=INTEGER},
+      </if>
+      <if test="balance != null">
+        #{balance,jdbcType=DECIMAL},
+      </if>
+      <if test="realname != null">
+        #{realname,jdbcType=VARCHAR},
+      </if>
+      <if test="idcard != null">
+        #{idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="bindto != null">
+        #{bindto,jdbcType=BIGINT},
+      </if>
+      <if test="userStatus != null">
+        #{userStatus,jdbcType=CHAR},
+      </if>
+      <if test="role != null">
+        #{role,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.yixinintl.domain.StarUser">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="user_phone" jdbcType="VARCHAR" property="userPhone" />
+    <result column="user_pwd" jdbcType="VARCHAR" property="userPwd" />
+    <result column="third_party_type" jdbcType="INTEGER" property="thirdPartyType" />
+    <result column="third_party_id" jdbcType="VARCHAR" property="thirdPartyId" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="age" jdbcType="VARCHAR" property="age" />
+    <result column="horoscope" jdbcType="VARCHAR" property="horoscope" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+    <result column="sign" jdbcType="VARCHAR" property="sign" />
+    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="last_login_type" jdbcType="TINYINT" property="lastLoginType" />
+    <result column="pic_url" jdbcType="VARCHAR" property="picUrl" />
+    <result column="ticket_count" jdbcType="INTEGER" property="ticketCount" />
+    <result column="vip_validity" jdbcType="TIMESTAMP" property="vipValidity" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="gift_count" jdbcType="INTEGER" property="giftCount" />
+    <result column="balance" jdbcType="DECIMAL" property="balance" />
+    <result column="realName" jdbcType="VARCHAR" property="realname" />
+    <result column="idCard" jdbcType="VARCHAR" property="idcard" />
+    <result column="bindTo" jdbcType="BIGINT" property="bindto" />
+    <result column="user_status" jdbcType="CHAR" property="userStatus" />
+    <result column="role" jdbcType="CHAR" property="role" />
+  </resultMap>
+  <insert id="insert" parameterType="com.yixinintl.domain.StarUser">
+    insert into star_user (id, user_id, user_phone, 
+      user_pwd, third_party_type, third_party_id, 
+      nickname, sex, age, 
+      horoscope, location, sign, 
+      last_login_time, last_login_type, pic_url, 
+      ticket_count, vip_validity, create_time, 
+      gift_count, balance, realName, 
+      idCard, bindTo, user_status, 
+      role)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{userPhone,jdbcType=VARCHAR}, 
+      #{userPwd,jdbcType=VARCHAR}, #{thirdPartyType,jdbcType=INTEGER}, #{thirdPartyId,jdbcType=VARCHAR}, 
+      #{nickname,jdbcType=VARCHAR}, #{sex,jdbcType=TINYINT}, #{age,jdbcType=VARCHAR}, 
+      #{horoscope,jdbcType=VARCHAR}, #{location,jdbcType=VARCHAR}, #{sign,jdbcType=VARCHAR}, 
+      #{lastLoginTime,jdbcType=TIMESTAMP}, #{lastLoginType,jdbcType=TINYINT}, #{picUrl,jdbcType=VARCHAR}, 
+      #{ticketCount,jdbcType=INTEGER}, #{vipValidity,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{giftCount,jdbcType=INTEGER}, #{balance,jdbcType=DECIMAL}, #{realname,jdbcType=VARCHAR}, 
+      #{idcard,jdbcType=VARCHAR}, #{bindto,jdbcType=BIGINT}, #{userStatus,jdbcType=CHAR}, 
+      #{role,jdbcType=CHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yixinintl.domain.StarUser">
+    insert into star_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="userPhone != null">
+        user_phone,
+      </if>
+      <if test="userPwd != null">
+        user_pwd,
+      </if>
+      <if test="thirdPartyType != null">
+        third_party_type,
+      </if>
+      <if test="thirdPartyId != null">
+        third_party_id,
+      </if>
+      <if test="nickname != null">
+        nickname,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="horoscope != null">
+        horoscope,
+      </if>
+      <if test="location != null">
+        location,
+      </if>
+      <if test="sign != null">
+        sign,
+      </if>
+      <if test="lastLoginTime != null">
+        last_login_time,
+      </if>
+      <if test="lastLoginType != null">
+        last_login_type,
+      </if>
+      <if test="picUrl != null">
+        pic_url,
+      </if>
+      <if test="ticketCount != null">
+        ticket_count,
+      </if>
+      <if test="vipValidity != null">
+        vip_validity,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="giftCount != null">
+        gift_count,
+      </if>
+      <if test="balance != null">
+        balance,
+      </if>
+      <if test="realname != null">
+        realName,
+      </if>
+      <if test="idcard != null">
+        idCard,
+      </if>
+      <if test="bindto != null">
+        bindTo,
+      </if>
+      <if test="userStatus != null">
+        user_status,
+      </if>
+      <if test="role != null">
+        role,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="userPhone != null">
+        #{userPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="userPwd != null">
+        #{userPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="thirdPartyType != null">
+        #{thirdPartyType,jdbcType=INTEGER},
+      </if>
+      <if test="thirdPartyId != null">
+        #{thirdPartyId,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null">
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=TINYINT},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="horoscope != null">
+        #{horoscope,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="sign != null">
+        #{sign,jdbcType=VARCHAR},
+      </if>
+      <if test="lastLoginTime != null">
+        #{lastLoginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastLoginType != null">
+        #{lastLoginType,jdbcType=TINYINT},
+      </if>
+      <if test="picUrl != null">
+        #{picUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="ticketCount != null">
+        #{ticketCount,jdbcType=INTEGER},
+      </if>
+      <if test="vipValidity != null">
+        #{vipValidity,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="giftCount != null">
+        #{giftCount,jdbcType=INTEGER},
+      </if>
+      <if test="balance != null">
+        #{balance,jdbcType=DECIMAL},
+      </if>
+      <if test="realname != null">
+        #{realname,jdbcType=VARCHAR},
+      </if>
+      <if test="idcard != null">
+        #{idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="bindto != null">
+        #{bindto,jdbcType=BIGINT},
+      </if>
+      <if test="userStatus != null">
+        #{userStatus,jdbcType=CHAR},
+      </if>
+      <if test="role != null">
+        #{role,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>
